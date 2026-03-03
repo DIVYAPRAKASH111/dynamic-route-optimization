@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dynamic Route Optimization</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Dynamic Route Optimization</h2>
+        <p>Click map to add stops. First point is depot.</p>
+
+        <div class="control">
+            <label>Vehicles</label>
+            <select id="vehicle-count">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </div>
+
+        <button id="optimize-btn">Optimize Route</button>
+        <button id="traffic-btn">Simulate Traffic</button>
+        <button id="urgent-btn">Add Urgent Order</button>
+
+        <div class="summary">
+            <h3>Route Summary</h3>
+            <div id="summary-content"></div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/static/script.js"></script>
+</body>
+</html>
